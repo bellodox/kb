@@ -24,6 +24,11 @@
   line-height: 34px;
 }
 
+.header .logo img {
+  height: 36px;
+  width: auto;
+}
+
 .header .search-form {
   margin-right: 20px;
 }
