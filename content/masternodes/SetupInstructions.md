@@ -53,7 +53,7 @@ MN1 IP_ADDRESS:7555 MASTERNODE_PRIVATE_KEY MASTERNODE_TX MASTERNODE_TX_INDEX
 4. Save the file.
 
 ### D. Remote VPS
-Once logged into your remote VPS as root please enter these commands to setup your masternode.  It is recommended to setup security and run the masternode as a non-root user, this guide does not cover this at this time.
+Once logged into your remote VPS as `root` please enter these commands to setup your masternode.  It is recommended to setup security and run the masternode as a non-root user, this guide does not cover this at this time.
 
 __Enter each line by line into the SSH console:__
 ```
@@ -64,17 +64,40 @@ mkdir ~/.methuselah
 nano ~/.methuselah/methuselah.conf
 ```
 
-Now enter the following information in the `methuselah.conf` file changing the `rpcuser=` and `rpcpassword=` information.
+Now enter the following information in the `methuselah.conf`.
 ```
-rpcuser=changeme
-rpcpassword=changeme
+rpcallowip=127.0.0.1
+rpcuser=CHANGE_ME
+rpcpassword=CHANGE_ME
 server=1
 daemon=1
+listen=1
+maxconnections=256
+masternode=1
+masternodeprivkey=MASTERNODE_PRIVATE_KEY
+externalip=IP_ADDRESS:7555
+promode=1
+addnode=node1.methuselahcoin.io:7555
+addnode=node2.methuselahcoin.io:7555
+addnode=node3.methuselahcoin.io:7555
+addnode=node4.methuselahcoin.io:7555
 ```
-Once done please `Ctrl+X` to save the file and then run the following.
+Make sure that you update `CHANGE_ME` with your own personal information, make it secure, `IP_ADDRESS` with the public ip address of the VPS, and `MASTERNODE_PRIVATE_KEY` with masternode private key generated above.  Once done please `Ctrl+X` to save the file and then run the following.
 ```
 methuselahd
 methuselah-cli getinfo
 ```
 Verify that you get output and not an error from `methuselah-cli getinfo` and wait for the chain to sync.  Verify the block height in `methuselah-cli getinfo` with the block height on the [block explorer](https://explorer.methuselahcoin.io).
 
+
+### C. Local QT Wallet
+To complete the masternode activation.
+1. Close the QT wallet.
+2. Open the QT wallet.  We do this so the changes made `masternode.conf` are updated.
+3. Go to the `Masternodes` tab and the `My Masternodes` sub-tab.  You should see your newly added masternode.
+4. Go to `Help->Debug Window`.
+5. Enter the command `masternode start-alias MN1`, replacing `MN1` with the alias value entered in `masternode.conf` and press the Enter key.
+6. You should recieve a success message, you are done.
+
+
+If you have any issues please contact us via [discord](https://discord.gg/KbqeYzU).
