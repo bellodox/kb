@@ -4,6 +4,8 @@ Description: Automated masternode setup from the community.
 Sort: 2
 */
 
+[https://github.com/Dwigt007/SAPMasternodeSetup](https://github.com/Dwigt007/SAPMasternodeSetup)
+
 **NOTE:** This installation guide is provided as is with no warranties of any kind.
 
 **NOTE:** This newer version of the script (v1.1) does not ask for IP address or masternode genkey anymore. Instead the __script will detect VPS IP Address and generate Masternode Private Key (genkey) automatically__. It will also create a 2GB swap file.
