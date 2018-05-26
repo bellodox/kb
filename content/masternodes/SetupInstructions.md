@@ -4,7 +4,6 @@ Description: Installation and configuration instructions for masternodes.
 Sort: 1
 */
 
-## Setup Instructions
 Please follow these instructions to manually setup your masternode.
 
 ### A. Local QT Wallet
