@@ -1,5 +1,5 @@
 /*
-Title: Dwigt's Mastenode Setup Script
+Title: Dwigt's Masternode Setup Script
 Description: Automated masternode setup from the community.
 Sort: 2
 */
