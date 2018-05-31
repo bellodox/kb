@@ -15,8 +15,9 @@ Purpose: Simple install scripts for MTS MasterNode
   Run this script by using the command  
 
            bash SetMNupFULL.sh
-
-
+  OR
+           bash SetMNupLITE.sh  
+    
 For the time being you can pull these with wget
   
 wget https://support.methuselahcoin.io/file/SetMNupFULL.sh
