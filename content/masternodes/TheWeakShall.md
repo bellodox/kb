@@ -15,7 +15,7 @@ Purpose: Simple install scripts for MTS MasterNode
   Run this script by using the command  
 
            bash SetMNupFULL.sh
-  OR
+#####      or
            bash SetMNupLITE.sh  
     
 For the time being you can pull these with wget
