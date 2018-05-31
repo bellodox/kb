@@ -19,7 +19,7 @@ Purpose: Simple install scripts for MTS MasterNode
            bash SetMNupLITE.sh  
     
 For the time being you can pull these with wget
-  
+
            wget https://support.methuselahcoin.io/file/SetMNupFULL.sh
 
 [SetMNupFULL](https://support.methuselahcoin.io/file/SetMNupFULL.sh)
@@ -27,3 +27,9 @@ For the time being you can pull these with wget
            wget https://support.methuselahcoin.io/file/SetMNupLITE.sh
 
 [SetMNupLITE](https://support.methuselahcoin.io/file/SetMNupLITE.sh)
+
+
+If your system does not have wget run the following command
+   
+           sudo apt-get install wget -y
+  
