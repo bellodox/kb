@@ -7,9 +7,9 @@ Script 1: SetMNupFULL.sh
 Script 2: SetMNupLITE.sh  
 Purpose: Simple install scripts for MTS MasterNode  
 *** 
-Variations  
-##### FULL - installs everything needed if you wanted to compile the MTS wallet  
-##### LITE - only installs Methuselah binaries  
+#####Variations  
+_FULL_ - installs everything needed if you wanted to compile the MTS wallet  
+_LITE_ - only installs Methuselah binaries  
  
   Run this script by using the command  
 
