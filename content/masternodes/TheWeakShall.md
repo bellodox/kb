@@ -1,14 +1,13 @@
-/*
-Title: TheWeakShall Masternode Setup Scripts  
-Description: Automated masternode setup scripts.  
-*/
+### TheWeakShall Masternode Setup Scripts  
+##### Automated MasterNode Setup Scripts.  
 
+***
 Original Author: TheWeakShall  
-Program: SetMNupFULL.sh  
-Program: SetMNupLITE.sh  
+Script 1: SetMNupFULL.sh  
+Script 2: SetMNupLITE.sh  
 Purpose: Simple install scripts for MTS MasterNode  
- 
-#### Flavors  
+*** 
+Variations  
 ##### FULL - installs everything needed if you wanted to compile the MTS wallet  
 ##### LITE - only installs Methuselah binaries  
  
