@@ -27,8 +27,10 @@ For the time being you can pull these with wget
 
 [SetMNupLITE](https://support.methuselahcoin.io/file/SetMNupLITE.sh)
 
+***
+**_If your system does not have wget_**
 
-If your system does not have wget run the following command
+#### run the following command
    
            sudo apt-get install wget -y
-  
+***  
