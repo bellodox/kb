@@ -11,8 +11,8 @@ Purpose: Simple install scripts for MTS MasterNode
 
 <Flavors>
   FULL - installs everything needed if you wanted to compile the MTS wallet
-  LITE - only installs Methuselah binaries 
-
+  LITE - only installs Methuselah binaries
+  
    Run this script by using the command
 
            bash SetMNupFULL.sh
