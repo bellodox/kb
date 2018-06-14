@@ -14,3 +14,4 @@ Replace `WALLET_ADDRESS` with your wallet address.
 | LPOOL | 4hrs | 2% | No | -o stratum+tcp://lyra2v2.lpool.name:12058 -u `WALLET_ADDRESS` -p c=SAP |
 | ARCPOOL | 1hr | 0.9% | No | -a lyra2v2 -o stratum+tcp://eu1.arcpool.com:1307 -u `WALLET_ADDRESS` -p x |
 | QueenBee Hive Mining Pool | 1hr | 1% | No | -a lyra2v2 -o stratum+tcp://hive.gulfcoastmining.com:4530 -u `WALLET_ADDRESS` -p c=SAP |
+| Bit Pool Send | 1hr | 0.4% | No | -a lyra2v2 -o stratum+tcp://sap.bitpoolsend.com:10001 -u `WALLET_ADDRESS` -p c=Methuselah |
