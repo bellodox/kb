@@ -6,4 +6,4 @@ Sort: 2
 
 Please check out Jooky's masternode setup instructions as well.  
 
-[SAP_MN_Guide.pdf](https://support.methuselahcoin.io/file/SAP_MN_Guide.pdf)
+[SAP_MN_Guide.pdf](https://support.methuselahcoin.io/file/SAP_MN_Guidev1.8.pdf)
