@@ -81,9 +81,9 @@ displayErr() {
     output " "
     sleep 3
     
-    wget https://github.com/methuselah-coin/methuselah/releases/download/v1.0.1.0/methuselah-1.0.1.0-linux.tar.gz
+    wget https://github.com/methuselah-coin/methuselah/releases/download/v1.1.0.2/methuselah-1.1.0.1-linux.tar.xz
     mkdir ~/bin
-    tar -zxf methuselah-1.0.1.0-linux.tar.gz -C ~/bin
+    tar -xf methuselah-1.1.0.1-linux.tar.xz -C ~/bin
     source ~/.profile
     mkdir ~/.methuselah
     touch ~/.methuselah/methuselah.conf

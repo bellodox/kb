@@ -56,9 +56,9 @@ Once logged into your remote VPS as `root` please enter these commands to setup 
 
 __Enter each line by line into the SSH console:__
 ```
-wget https://github.com/methuselah-coin/methuselah/releases/download/v1.0.1.0/methuselah-1.0.1.0-linux.tar.gz
-tar -zxvf methuselah-1.0.1.0-linux.tar.gz -C /usr/local/bin
-rm -f methuselah-1.0.1.0-linux.tar.gz
+wget https://github.com/methuselah-coin/methuselah/releases/download/v1.1.0.2/methuselah-1.1.0.1-linux.tar.xz
+tar -xvf methuselah-1.1.0.1-linux.tar.xz -C /usr/local/bin
+rm -f methuselah-1.1.0.1-linux.tar.xz
 mkdir ~/.methuselah
 nano ~/.methuselah/methuselah.conf
 ```
