@@ -1,7 +1,7 @@
 /*
 Title: Style Issues
-Description: If you are unable to see the latest style changes.
-Sort: 1
+Description: Wallet related style issues.
+Sort: 3
 */
 
 #### Unable to view latest style updates?
