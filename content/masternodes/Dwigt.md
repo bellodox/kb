@@ -1,7 +1,7 @@
 /*
 Title: Dwigt's Masternode Setup Script
 Description: Automated masternode setup from the community.
-Sort: 2
+Sort: 4
 */
 
 [https://github.com/Dwigt007/SAPMasternodeSetup](https://github.com/Dwigt007/SAPMasternodeSetup)

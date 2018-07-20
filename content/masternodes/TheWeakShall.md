@@ -1,3 +1,9 @@
+/*
+Title: TheWeakShall's Masternode Setup
+Description: Automated masternode setup script.
+Sort: 2
+*/
+
 ### TheWeakShall Masternode Setup Scripts  
 ##### Automated MasterNode Setup Scripts.  
 

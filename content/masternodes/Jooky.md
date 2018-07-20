@@ -1,7 +1,7 @@
 /*
 Title: Jooky's Masternode Setup
 Description: Automated masternode setup from the community manager.
-Sort: 2
+Sort: 3
 */
 
 ```
