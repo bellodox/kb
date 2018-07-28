@@ -16,4 +16,9 @@ addnode=node1.methuselahcoin.io:7555
 addnode=node2.methuselahcoin.io:7555
 addnode=node3.methuselahcoin.io:7555
 addnode=node4.methuselahcoin.io:7555
+addnode=node5.methuselahcoin.io:7555
+addnode=node6.methuselahcoin.io:7555
+addnode=node7.methuselahcoin.io:7555
+addnode=node8.methuselahcoin.io:7555
+addnode=node9.methuselahcoin.io:7555
 ```
