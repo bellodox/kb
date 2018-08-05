@@ -13,7 +13,7 @@ a:focus {
   color: #19952a;
 }
 
-.home-search .jumbotron {
+.container-fluid .home-search.jumbotron {
   background-color: #222;
 }
 
