@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #39b54a;
 }
 
+.btn.btn-primary.btn-lg {
+  background-color: #39b54a;
+}
+
 .container-fluid .home-search.jumbotron {
   background-color: #222;
 }
