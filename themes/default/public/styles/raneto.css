@@ -13,6 +13,10 @@ a:focus {
   color: #19952a;
 }
 
+.home-search .jumbotron {
+  background-color: #222;
+}
+
 .header {
   color: #CCC;
   background-color: #111;
