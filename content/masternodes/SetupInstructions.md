@@ -65,7 +65,7 @@ sudo sed -i -e 's/usr\/local\/games/usr\/local\/methuselah\/bin/g' /etc/environm
 sudo mkdir -p /home/sap/.methuselah
 sudo touch /home/sap/.methuselah/methuselah.conf
 sudo chown -R sap:sap /home/sap/
-wget https://github.com/methuselah-coin/methuselah/releases/download/v1.1.0.4/methuselah-1.1.0.1-linux.tar.xz
+wget https://github.com/methuselah-coin/methuselah/releases/download/v1.1.0.4/methuselah-1.1.0.4-linux.tar.xz
 tar -xvf methuselah-1.1.0.4-linux.tar.xz -C /usr/local/bin
 sudo chown -R sap:sap /usr/local/methuselah
 wget clone https://github.com/methuselah-coin/mn-install/blob/master/service
