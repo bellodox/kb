@@ -16,3 +16,6 @@ Replace `WALLET_ADDRESS` with your wallet address.
 | QueenBee Hive Mining Pool | 1hr | 1% | No | -a lyra2v2 -o stratum+tcp://hive.gulfcoastmining.com:4530 -u `WALLET_ADDRESS` -p c=SAP |
 | Bit Pool Send | 1hr | 0.4% | No | -a lyra2v2 -o stratum+tcp://sap.bitpoolsend.com:10001 -u `WALLET_ADDRESS` -p c=Methuselah |
 | Alien Pool | 2hr | 0.5% | No | -a lyra2v2 -o stratum+tcp://alien-mining-pool.com:4540 -u `WALLET_ADDRESS` -p c=SAP |
+
+
+__Pool Status:__ [Sky's Script](http://int.youcrazy.me/poolcheck.php)
