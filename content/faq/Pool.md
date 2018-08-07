@@ -1,5 +1,5 @@
 /*
-Title: Pools
+Title: Mining Pools
 Description: The list of pools to mine SAP on.
 Sort: 2
 */

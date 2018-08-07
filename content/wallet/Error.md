@@ -4,6 +4,12 @@ Description: The edge of sanity.
 Sort: 1
 */
 
+#### Error while loading shared libraries: libzmq.so.5?
+```
+methuselahd: error while loading shared libraries: libzmq.so.5: cannot open shared object file: No such file or directory
+```
+Try installing `sudo apt-get install libzmq3-dev`.
+
 #### Unable to locate `libboost_system.so.1.58.0`?
 ```
 /usr/local/methuselah/bin/methuselahd: error while loading shared libraries: libboost_system.so.1.58.0: cannot open shared object file: No such file or directory
