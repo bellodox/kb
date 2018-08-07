@@ -1,5 +1,5 @@
 /*
-Title: Wallet Errors
+Title: Common Errors
 Description: The edge of sanity.
 Sort: 1
 */
