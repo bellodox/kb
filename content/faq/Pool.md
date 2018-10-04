@@ -4,7 +4,7 @@ Description: The list of pools to mine SAP on.
 Sort: 2
 */
 
-Replace `WALLET_ADDRESS` with your wallet address.
+Replace `WALLET_ADDRESS` with your wallet address or visit link for information.
 
 | Name | Payout | Fee | Register | Notes |
 | --- | --- | --- | --- | --- |
