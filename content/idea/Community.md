@@ -1,7 +1,7 @@
 /*
 Title: Community Outreach
 Description: Ideas that help Methuselah and cryptocurrency in general.
-Sort: 1
+Sort: 2
 */
 
 ## Community Outreach
