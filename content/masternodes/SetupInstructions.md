@@ -52,15 +52,30 @@ MN1 IP_ADDRESS:7555 MASTERNODE_PRIVATE_KEY MASTERNODE_TX MASTERNODE_TX_INDEX
 4. Save the file.
 
 ### D. Remote VPS
-Once logged into your remote VPS as `root` please enter these commands to setup your masternode.  It is recommended to setup security and run the masternode as a non-root user, this guide does not cover this at this time.
+Once logged into your remote VPS as `root` please enter these commands to setup your masternode.  It is recommended to setup security and run the masternode as a non-root user, this guide does cover this.
 
 __Enter each line by line into the SSH console:__
 ```
-wget https://github.com/methuselah-coin/methuselah/releases/download/v1.1.0.2/methuselah-1.1.0.1-linux.tar.xz
-tar -xvf methuselah-1.1.0.1-linux.tar.xz -C /usr/local/bin
-rm -f methuselah-1.1.0.1-linux.tar.xz
-mkdir ~/.methuselah
-nano ~/.methuselah/methuselah.conf
+cd ~
+sudo apt-get update
+sudo apt-get nano -y
+sudo mkdir -p /usr/local/methuselah/bin
+sudo adduser --disabled-password --gecos "" sap
+sudo sed -i -e 's/usr\/local\/games/usr\/local\/methuselah\/bin/g' /etc/environment
+sudo mkdir -p /home/sap/.methuselah
+sudo touch /home/sap/.methuselah/methuselah.conf
+sudo chown -R sap:sap /home/sap/
+wget https://github.com/methuselah-coin/methuselah/releases/download/v1.1.0.4/methuselah-1.1.0.4-linux.tar.xz
+tar -xvf methuselah-1.1.0.4-linux.tar.xz -C /usr/local/methuselah/bin
+sudo chown -R sap:sap /usr/local/methuselah
+wget clone https://github.com/methuselah-coin/mn-install/blob/master/service
+sudo cp service /etc/init.d/methuselah
+sudo chmod 755 /etc/init.d/methuselah
+sudo update-rc.d methuselah defaults
+rm -f methuselah-1.1.0.4-linux.tar.xz
+rm -f service
+sudo chown -R sap:sap /usr/local/methuselah
+nano /home/sap/.methuselah/methuselah.conf
 ```
 
 Now enter the following information in the `methuselah.conf`.
@@ -80,13 +95,20 @@ addnode=node1.methuselahcoin.io:7555
 addnode=node2.methuselahcoin.io:7555
 addnode=node3.methuselahcoin.io:7555
 addnode=node4.methuselahcoin.io:7555
+addnode=node5.methuselahcoin.io:7555
+addnode=node6.methuselahcoin.io:7555
+addnode=node7.methuselahcoin.io:7555
+addnode=node8.methuselahcoin.io:7555
+addnode=node9.methuselahcoin.io:7555
 ```
 Make sure that you update `CHANGE_ME` with your own personal information, make it secure, `IP_ADDRESS` with the public ip address of the VPS, and `MASTERNODE_PRIVATE_KEY` with masternode private key generated above.  Once done please `Ctrl+X` to save the file and then run the following.
 ```
-methuselahd
-methuselah-cli getinfo
+chown -R sap:sap /home/sap
+service methuselah start
+service methuselah chain
+service methuselah master
 ```
-Verify that you get output and not an error from `methuselah-cli getinfo` and wait for the chain to sync.  Verify the block height in `methuselah-cli getinfo` with the block height on the [block explorer](https://explorer.methuselahcoin.io).
+Verify that you get output and not an error from `service methuselah chain` and wait for the chain to sync.  Verify the block height in `service methuselah chain` with the block height on the [block explorer](https://explorer.methuselahcoin.io).
 
 
 ### C. Local QT Wallet
