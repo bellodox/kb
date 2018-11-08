@@ -16,6 +16,7 @@ Replace `WALLET_ADDRESS` with your wallet address or visit link for information.
 | Bit Pool Send | 1hr | 0.4% | No | -a lyra2v2 -o stratum+tcp://sap.bitpoolsend.com:10001 -u `WALLET_ADDRESS` -p c=Methuselah |
 | Alien Pool | 2hr | 0.5% | No | -a lyra2v2 -o stratum+tcp://alien-mining-pool.com:4540 -u `WALLET_ADDRESS` -p c=SAP |
 | AC Pool | PPLNS | 0.1% | No | See [https://acpool.me/coin/methuselah](https://acpool.me/coin/methuselah) |
+| ZPool | 4hr | Unk | No | See [https://www.zpool.ca](https://www.zpool.ca) |
 
 
 __Pool Status:__ [Sky's Script](http://int.youcrazy.me/poolcheck.php)
