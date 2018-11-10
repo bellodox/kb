@@ -1,29 +1,50 @@
 
 body {
-  background-color: #333;
+  background-color: #000000;
+}
+
+body input[type="search"] {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0;
 }
 
 a,
 a:visited {
   color: #39b54a;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover,
 a:focus {
-  color: #19952a;
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #39b54a;
 }
 
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .btn.btn-primary.btn-lg {
-  background-color: #39b54a;
-  border-color: #39b54a;
+  background-color: #000000;
+  border: 0;
+  border-radius: 0;
+}
+
+.btn.btn-primary.btn-lg:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .container-fluid .home-search.jumbotron {
   background-color: #39b54a; 
+  border-radius: 0;
 }
 
 .header {
@@ -82,6 +103,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.menu .category:first-child h5 {
+  color: #ffffff;
+}
+
 .menu .category.active .category-title {
   font-weight: bold;
 }
@@ -89,17 +114,17 @@ h1, h2, h3, h4, h5, h6 {
 .menu a {
   display: inline-block;
   line-height: 20px;
-  color: #888;
+  color: #ffffff;
 }
 
 .menu a:hover {
-  color: #444;
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
 }
 
 .menu .page.active a {
   font-weight: bold;
-  color: #444;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .page-home .header .search-form {
@@ -114,10 +139,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 10px;
 }
 
-.home-categories .panel-heading {
+.home-categories .panel {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0;
+}
+
+.home-categories .panel .panel-heading {
+  background-color: #ffffff;
+  border: 0;
+  border-bottom: 2px solid #39b54a;
+  border-radius: 0;
+  color: #000000;
   margin: 0;
   font-size: 100%;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .home-categories .panel-heading,
@@ -168,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   background: #ffffff;
   border: 1px solid #D6D6D6;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -176,11 +212,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .content code {
   color: #555;
-  background-color: #ffffffDDC;
+  background-color: #ffffff;
 }
 
 .content pre {
-  background: #ffffffDDC;
+  background: #ffffff;
   border: 0;
 }
 
@@ -215,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-excerpt .search-query {
-  background: #ffffffDDC;
+  background: #ffffff;
 }
 
 .error {
