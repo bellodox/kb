@@ -13,7 +13,7 @@ var config = {
   base_url: 'https://support.methuselahcoin.io',
 
   // Used for the "Get in touch" page footer link
-  support_email: '',
+  support_email: 'methuselahdev@gmail.com',
 
   // Footer Text / Copyright
   copyright: 'Copyright &copy; ' + new Date().getFullYear() + ' - <a href="https://methuselahcoin.io">Powered by Raneto for Methuselah</a>',
@@ -85,7 +85,7 @@ var config = {
   locale: 'en',
 
   // Support search with extra languages
-  searchExtraLanguages: ['ru'],
+  searchExtraLanguages: [],
 
   // Sets the format for datetime's
   datetime_format: 'Do MMM YYYY',
@@ -110,7 +110,7 @@ var config = {
   //   }
   // ]
 
-  table_of_contents: false
+  table_of_contents: true
 
 };
 config.public_dir = path.join(__dirname, 'themes', config.theme_name, 'public');
